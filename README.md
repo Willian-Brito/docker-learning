@@ -479,7 +479,7 @@ docker buildx build --platform linux/amd64,linux/arm64 -t willianbrito00/angular
 Ele ajuda a **implantar**, **escalar** e **gerenciar aplicações em contêineres** (como os criados com Docker) de forma automática e eficiente.
 
 <div align="center">
-   <img src="https://raw.githubusercontent.com/Willian-Brito/docker-learning/refs/heads/main/prints/kubernetes.png" height="400" />
+   <img src="https://raw.githubusercontent.com/Willian-Brito/docker-learning/refs/heads/main/prints/kubernetes-2.png" height="400" />
 </div>
 
 ### 🔧 O que o Kubernetes faz?
