@@ -1,6 +1,8 @@
 # 🐳 Introdução ao Docker
 
-[IMAGEM]
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Willian-Brito/docker-learning/refs/heads/main/prints/docker_logo.svg.png" />
+</div>
 
 ## 📌 O que é ?
 
@@ -15,15 +17,22 @@ A arquitetura do Docker pode ser dividida em quatro partes principais:
 
 1. **Docker Engine**  
    O serviço principal que roda em segundo plano. Ele é responsável por criar, executar e gerenciar containers.
-    [IMAGEM]
+   <div align="center">
+      <img src="https://raw.githubusercontent.com/Willian-Brito/docker-learning/refs/heads/main/prints/docker_engine.png" height="300
+      " />
+   </div>
 
 2. **Docker Images**  
    Imagens são templates imutáveis com tudo que um container precisa. Você pode pensar nelas como snapshots do ambiente da aplicação.
-   [IMAGEM]
+   <div align="center">
+      <img src="https://raw.githubusercontent.com/Willian-Brito/docker-learning/refs/heads/main/prints/Imagens%20docker.png" height="300" />
+   </div>
 
 3. **Docker Containers**  
    São instâncias executáveis baseadas nas imagens. Podem ser criadas, iniciadas, paradas e removidas de forma rápida.
-   [IMAGEM]
+   <div align="center">
+      <img src="https://raw.githubusercontent.com/Willian-Brito/docker-learning/refs/heads/main/prints/docker_container.png" height="300" />
+   </div>
 
 4. **Dockerfile**  
    É um arquivo que define como a imagem do container deve ser construída, especificando base, comandos, cópias, portas e variáveis.
@@ -41,13 +50,20 @@ A arquitetura do Docker pode ser dividida em quatro partes principais:
 | **Segurança**          | Isolamento menor (compartilha kernel)        | Isolamento mais robusto                        |
 | **Uso principal**      | Microserviços, CI/CD, DevOps, cloud-native   | Aplicações legadas, ambientes full-stack       |
 
-[IMAGEM: Docker vs VM]
+
+**Exemplo:**
+<div align="center">
+   <img src="https://raw.githubusercontent.com/Willian-Brito/docker-learning/refs/heads/main/prints/docker%20vs%20vm.png" height="400" />
+</div>
 
 ## 🏗️ Arquitetura
 
 A arquitetura do Docker é baseada em um modelo cliente-servidor que permite o controle e gerenciamento de containers. Ela é composta por três elementos principais:
 
-[IMAGEM]
+<div align="center">
+   <img src="https://raw.githubusercontent.com/Willian-Brito/docker-learning/refs/heads/main/prints/docker_arquitetura.png" height="400" />
+</div>
+
 
 ### 🔳 1. Docker CLI (Cliente)
 
@@ -233,7 +249,9 @@ docker volume rm meu-volume
 ## 🌐 O que é Docker Network?
 Docker Network é a camada de rede virtual que conecta os containers. Quando você cria um container, ele é automaticamente conectado a uma rede (por padrão, a rede `bridge`) mas você também pode definir redes personalizadas com diferentes comportamentos e isolamento.
 
-[IMAGE]
+<div align="center">
+   <img src="https://raw.githubusercontent.com/Willian-Brito/docker-learning/refs/heads/main/prints/networking.png" height="400" />
+</div>
 
 ## 🧠 Como funciona a comunicação entre containers?
  * Containers na mesma rede Docker (por exemplo, uma rede do tipo bridge ou overlay) podem se comunicar entre si pelo nome do container ou pelo nome de serviço no Docker Compose.
@@ -338,6 +356,10 @@ O **Docker Compose** é uma ferramenta que permite definir e gerenciar múltiplo
 
 No Docker, existem diferentes tipos de volumes que podem ser usados para persistir dados ou compartilhar arquivos entre o host e os contêineres.
 
+<div align="center">
+   <img src="https://raw.githubusercontent.com/Willian-Brito/docker-learning/refs/heads/main/prints/volumes.png" height="400" />
+</div>
+
 ### 📑 Tabela Comparativa
 
 | Tipo         | Comando (exemplo)                       | Descrição |
@@ -389,8 +411,6 @@ docker run --name origem-temp -it --mount type=tmpfs,destination=/mytmp ubuntu b
 | Persistência de dados                 | Volume           |
 | Compartilhamento com arquivos do host | Bind Mount       |
 | Dados temporários ou sensíveis        | tmpfs            |
-
-[IMAGEM]
 
 ---
 
@@ -457,6 +477,10 @@ docker buildx build --platform linux/amd64,linux/arm64 -t willianbrito00/angular
 **Kubernetes** (também chamado de **K8s**) é uma **plataforma open source** para **orquestração de contêineres**. Ele foi originalmente desenvolvido pelo **Google** e hoje é mantido pela **Cloud Native Computing Foundation (CNCF)**.
 
 Ele ajuda a **implantar**, **escalar** e **gerenciar aplicações em contêineres** (como os criados com Docker) de forma automática e eficiente.
+
+<div align="center">
+   <img src="https://raw.githubusercontent.com/Willian-Brito/docker-learning/refs/heads/main/prints/kubernetes.png" height="400" />
+</div>
 
 ### 🔧 O que o Kubernetes faz?
  1. **Orquestra contêineres:** decide onde e como os contêineres devem rodar.
